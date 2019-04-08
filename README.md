@@ -12,3 +12,4 @@ To get started, download the project and open index.html in your browser as well
 
 Use the template to create your own app with an API of your liking or needs. 
       
+https://bergman12.github.io/api_one_page_template/
