@@ -58,6 +58,7 @@
             <ul id="nav-mobile" class="left">
               <li id="menu-page-one"><a href="#">Page 1</a></li>
               <li id="menu-page-two"><a href="#">Page 2</a></li>
+              <li id="menu-page-three"><a href="#">Page 3</a></li>
             </ul>
           </div>
         </nav>
@@ -113,8 +114,33 @@
       <div id="api-component-page-two">
       </div>
     </div>
-
+    <div id="page-three">
+      <div class="row">
+        <div class="col s12 m6">
+          <h4>Single page API app</h4>
+          <p>Go to page 2 and find an API of your liking. Then begin coding a complete web-app to suit your needs.</p>
+          <p>Below this text, you can see an example of how to pull API data into your app. The page basically uses
+            three techonologies to make this happen:</p>
+            <ul><li>Root url: "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"</li>
+              <li>Querystring: "?participants=4"</li>
+              </ul>
+          <ol>
+            <li><a href="https://api.jquery.com/">jQuery</a> - to make asynchronous API calls and manipulate DOM
+              elements.</li>
+            <li><a href="https://handlebarsjs.com/">Handlebars.js</a> - to make HTML templates and insert well-formatted
+              JSON.</li>
+            <li><a href="https://materializecss.com/">Materialize.css</a> - to make the page look great.</li>
+          </ol>
+          <a class="waves-effect waves-light btn-large" onclick="getSomeOtherApiData('random?auth=null')">pick a card</a>
+          <hr />
+          <h5>Example card from the Bored api</h5>
+        </div>
+      </div>
+      <div id="api-component-page-three">
+      </div>
+    </div>
   </div>
+  
 
 
   <!-- End Document body
@@ -161,6 +187,24 @@
           </div>
       </div>
     </div>
+    <script id="api-card-template-three" type="text/x-handlebars-template">
+      <div class="row">
+          <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">                your card is
+                </span>
+                <p>
+                  blandnet:{{shuffled}}
+                  kort tilbage: {{remaining}}
+                  blandnet:{{deck_id}}
+               
+                  <ul>
+                    
+              </div>
+            </div>
+        </div>
+      </div>
 </script>
 
   <!-- Page functionality - Javascripts
@@ -203,11 +247,19 @@
       getApiData(1)
       $('#page-one').show();
       $('#page-two').hide();
+      $('#page-three').hide();
     });
     //When someone clicks the page two navigation link
     $('#menu-page-two').click(function () {
       $('#page-one').hide();
       $('#page-two').show();
+      $('#page-three').hide();
+    });
+    $('#menu-page-three').click(function () {
+      getApiData(1)
+      $('#page-one').hide();
+      $('#page-two').hide();
+      $('#page-three').show();
     });
   </script>
 
