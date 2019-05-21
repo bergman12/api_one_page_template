@@ -1,15 +1,19 @@
-# api_one_page_template
-This is a one-page template to make a neat web-app using an external API with jQuery. The app use the following frameworks and boilerplates:
+Nikolaj Bergman 2R
 
-<ul>
-<li><a href="https://github.com/toddmotto/public-apis">Some public API with little or no authentication</a></li>
-<li><a href="https://handlebarsjs.com/">Handlebars javascript</a></li>
-<li><a href="https://materializecss.com/">Materialize css</a></li>
-<li><a href="https://jquery.com/">jQuery</a></li>
-</ul>
+synopse
 
-To get started, download the project and open index.html in your browser as well as in a code editor. Study the structure to get an overall picture of how handlebars, jQuery and Materialize work together to show the results from the API queries. 
 
-Use the template to create your own app with an API of your liking or needs. 
+begrundelse for valg af prøveoplæg
+Jeg har valgt at arbejde med API'er da det nok er noget af det mest normale indenfor hjemmesider, rigtig mange websites bruger det og derfor er det vigtigt at vide hvad det er og hvordan det fungere hvis man skal arbejde med hjemmesider.
+
+Produktbeskrivelse
+min API går ud på at finde oplysninger omkring bitcoins, hvor meget de bliver solgt for, hvor mange der er mined, Hash rate osv.
+
+Fremlæggelsen
+Visning af projekt
+snak om de forskellige funktioner der er blevet brugt
+hvad er en API
+hvordan virker en API
+
       
 https://bergman12.github.io/api_one_page_template/
